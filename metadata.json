@@ -1,0 +1,8 @@
+{
+  "name": "Remix Remix DeadlineHub",
+  "description": "Satu Tempat, Semua Deadline - Aplikasi pengingat deadline mahasiswa dengan notifikasi email, kalender interaktif, dan ringkasan tugas.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

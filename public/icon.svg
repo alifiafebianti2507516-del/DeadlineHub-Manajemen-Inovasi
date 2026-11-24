@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E3A8A" />
+      <stop offset="50%" stop-color="#1D4ED8" />
+      <stop offset="100%" stop-color="#0284C7" />
+    </linearGradient>
+    <linearGradient id="card-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#F1F5F9" />
+    </linearGradient>
+    <linearGradient id="accent-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F59E0B" />
+      <stop offset="100%" stop-color="#EF4444" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#0F172A" flood-opacity="0.35" />
+    </filter>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="512" height="512" rx="112" fill="url(#bg-grad)" />
+
+  <!-- Inner Soft Glow -->
+  <rect x="24" y="24" width="464" height="464" rx="96" fill="none" stroke="#60A5FA" stroke-width="4" stroke-opacity="0.3" />
+
+  <!-- Main Calendar Card Body with Shadow -->
+  <g filter="url(#shadow)">
+    <rect x="96" y="112" width="320" height="304" rx="36" fill="url(#card-grad)" />
+    
+    <!-- Top Header Bar of Calendar -->
+    <path d="M96 148 C96 128 112 112 132 112 L380 112 C400 112 416 128 416 148 L416 196 L96 196 Z" fill="#1E3A8A" />
+
+    <!-- Binder Rings -->
+    <rect x="160" y="88" width="24" height="48" rx="12" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="4" />
+    <rect x="328" y="88" width="24" height="48" rx="12" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="4" />
+
+    <!-- Calendar Grid Dots / Mini Task lines -->
+    <circle cx="160" cy="240" r="14" fill="#3B82F6" />
+    <circle cx="216" cy="240" r="14" fill="#E2E8F0" />
+    <circle cx="272" cy="240" r="14" fill="#E2E8F0" />
+    <circle cx="328" cy="240" r="14" fill="#E2E8F0" />
+
+    <circle cx="160" cy="296" r="14" fill="#E2E8F0" />
+    <circle cx="216" cy="296" r="14" fill="#E2E8F0" />
+    <circle cx="272" cy="296" r="14" fill="#E2E8F0" />
+    <circle cx="328" cy="296" r="14" fill="#10B981" />
+
+    <!-- Urgent Deadline Badge (Bell / Star / Flame) -->
+    <rect x="144" y="340" width="136" height="40" rx="20" fill="#EFF6FF" />
+    <text x="176" y="366" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="800" fill="#1D4ED8">OCT 2026</text>
+    <circle cx="158" cy="360" r="5" fill="#EF4444" />
+
+    <!-- Checkmark Badge in Bottom Right -->
+    <circle cx="344" cy="356" r="32" fill="#10B981" />
+    <path d="M330 356 L340 366 L360 346" fill="none" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+
+  <!-- Small Graduation Cap / University emblem top left -->
+  <path d="M216 142 L256 126 L296 142 L256 158 Z" fill="#FDE047" />
+  <path d="M236 152 L236 170 Q256 182 276 170 L276 152" fill="none" stroke="#FDE047" stroke-width="4" stroke-linecap="round" />
+  <path d="M296 142 L306 156 L306 172" fill="none" stroke="#FDE047" stroke-width="3" stroke-linecap="round" />
+</svg>
